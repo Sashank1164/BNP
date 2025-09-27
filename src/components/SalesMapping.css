@@ -1,0 +1,115 @@
+.sales-mapping {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.card-header {
+  margin-bottom: 25px;
+}
+
+.card-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.map-container {
+  margin-bottom: 20px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.world-map {
+  position: relative;
+  width: 200px;
+  height: 120px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.map-region {
+  position: absolute;
+  border-radius: 4px;
+  opacity: 0.8;
+}
+
+.usa {
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 25px;
+}
+
+.brazil {
+  bottom: 30px;
+  left: 60px;
+  width: 35px;
+  height: 30px;
+}
+
+.india {
+  top: 50px;
+  right: 40px;
+  width: 30px;
+  height: 20px;
+}
+
+.indonesia {
+  bottom: 20px;
+  right: 20px;
+  width: 25px;
+  height: 15px;
+}
+
+.countries-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.country-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.country-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.country-name {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  flex: 1;
+}
+
+.country-sales {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .world-map {
+    width: 150px;
+    height: 90px;
+  }
+  
+  .country-name {
+    font-size: 13px;
+  }
+  
+  .country-sales {
+    font-size: 11px;
+  }
+}

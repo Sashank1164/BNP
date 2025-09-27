@@ -1,0 +1,180 @@
+/* Full container: sidebar + main */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh; /* full viewport height */
+  width: 100%;
+  background: #f8f9fc;
+  overflow: hidden;
+}
+
+/* Enlarged Sidebar */
+.sidebar {
+  width: 280px; /* wider sidebar */
+  background: linear-gradient(180deg, #1e293b, #0f172a);
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* stretch sidebar items */
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-title {
+  font-size: 2rem; /* slightly larger */
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #facc15;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1; /* fill space */
+}
+
+.sidebar-menu li {
+  font-size: 1.3rem; /* enlarged */
+  margin: 15px 0;
+  cursor: pointer;
+  padding: 12px 18px;
+  border-radius: 12px;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.sidebar-menu li:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
+
+/* Main Section */
+/* Main Section */
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 100px 40px 10px; /* increased top padding to 60px */
+  background: #f1f5f9;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+
+/* Remove extra bottom space */
+.dashboard > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Title */
+.dashboard-title {
+  font-size: 2.2rem; /* bigger */
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+/* KPI Grid */
+.kpi-section {
+  margin: 20px 0;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* slightly larger cards */
+  gap: 15px;
+}
+
+.kpi-card {
+  background: white;
+  padding: 25px; /* bigger */
+  text-align: center;
+  border-radius: 18px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-4px);
+}
+
+.kpi-value {
+  font-size: 2.2rem; /* bigger */
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.kpi-label {
+  font-size: 1.1rem; /* slightly bigger */
+  margin-top: 5px;
+  color: #475569;
+}
+
+/* Input Section */
+.input-card {
+  background: white;
+  padding: 25px; /* bigger */
+  border-radius: 18px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.input-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.customer-input {
+  flex: 1;
+  padding: 12px; /* larger */
+  border-radius: 10px;
+  border: 1px solid #94a3b8;
+  outline: none;
+  font-size: 1rem;
+}
+
+.download-button,
+.chatbot-button,
+.upload-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px; /* bigger */
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem; /* bigger text */
+  transition: background 0.2s ease;
+}
+
+.download-button:hover,
+.chatbot-button:hover,
+.upload-button:hover {
+  background: #1e40af;
+}
+
+.upload-status {
+  margin-top: 5px;
+  font-size: 1rem; /* slightly bigger */
+  color: #16a34a;
+}
+
+/* Enlarged Icons */
+.enlarged-icon {
+  font-size: 1.8rem; /* enlarged */
+}
+
+/* Scrollbar fix */
+.dashboard::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dashboard::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
