@@ -1,0 +1,47 @@
+CreditDashboard.css
+
+.credit-container {
+  padding: 20px;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+.credit-container h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.credit-chart {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.credit-chart h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.recharts-wrapper {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .credit-chart {
+    padding: 15px;
+  }
+
+  .credit-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .credit-chart h3 {
+    font-size: 1rem;
+  }
+}
